@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8" name="theme-color" content="#FF8000" />
+    <title>合成抵抗計算サイト</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/texteffects.min.js"></script>
+    <script type="text/javascript" src="js/texteffects.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </head>
+
+  <body>
+    <h1>合成抵抗計算サイト</h1>
+    <h2 class="text-effect">このサイトでは入力された抵抗の合成抵抗を計算します</h2>
+    <p class="text-effect">合成抵抗算出方法選択</p>
+    <center>
+      <div id="switch" value=0>
+        <a id="a"><strong>直列</strong>接続回路時合成抵抗</a>
+        <a id="b"><strong>並列</strong>接続回路時合成抵抗</a>
+      </div>
+    </center>
+    <center><p id="divA"><strong style="color:#FF0000;">直列</strong>接続合成抵抗算出</p></center>
+    <center><p id="divB"><strong style="color:#FF0000;">並列</strong>接続合成抵抗算出</p></center>
+    <h2 class="text-effect">カンマ区切りで抵抗値[Ω]を入力してください</h2>
+    <h2 class="text-effect">また、数字は全て半角で入力してください</h2>
+    <h2 class="text-effect">最終桁の0は取り除いてください有効数字は無視します</h2>
+    <form name="param" action="#">
+      <p><input type="text" size="50" maxlength="1000" id="cal" style="font-size:2vh;width:50vh;height:2vh;"></p>
+      <p><input type="button" value="submit" onClick="cali()" style="width:15vh;height:5vh;font-size:3vh;"></p>
+    </form>
+    <p><a id="answer" style="color:#00FF00">Result</a></p>
+    <p class="text-effect">I'm a Developer. My name is ZODIAC CAULFIELD!...よろぴく...</p>
+    <center>
+      <p class="text-effect">Developer↓</p>
+      <a class="button_b" href="http://zodi-g12.hatenablog.com">Blog</a>
+      <a class="button_b" href="https://twitter.com/zodi_G12">Twitter</a>
+      <a class="button_b" href="https://github.com/zodiac-G12">GitHub</a>
+    </center>
+  </body>
+
+  <footer>
+    <p id="short">&copy; Copyright 2017 Zodiac Caulfield</p>
+  </footer>
+
+</html>
